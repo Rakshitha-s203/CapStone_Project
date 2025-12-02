@@ -1,0 +1,118 @@
+/* ===========================
+   Global Auth Styles
+   =========================== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e6e9e9 0%, #c3e8f5 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInBg 1.2s ease-in-out;
+}
+
+@keyframes fadeInBg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===========================
+   Auth Card
+   =========================== */
+.auth-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 0.9s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* ===========================
+   Form Styles
+   =========================== */
+.auth-form input {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.7rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #88c1ff, #7ee7fa);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ===========================
+   Messages & Links
+   =========================== */
+.auth-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #d9534f;
+}
+
+.auth-link {
+  color: #2575fc;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.auth-link:hover {
+  color: #6a11cb;
+  text-decoration: underline;
+}
+
+/* ===========================
+   Animation Variants
+   =========================== */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.9s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
